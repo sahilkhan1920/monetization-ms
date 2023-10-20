@@ -1,0 +1,98 @@
+body {
+  background-color: transparent;
+}
+.subscribe-container {
+  position: relative;
+  height: 100%;
+  .subscribe {
+    background: transparent;
+    img {
+      width: 100%;
+      padding: 0 1.2rem;
+    }
+    .shadow-line {
+      width: 100%;
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    h3 {
+      text-align: center;
+      padding: 2rem;
+      // color: #fff;
+    }
+  }
+}
+
+// @media (max-width : 1370px) {
+//   .subscribe-container {
+//     .subscribe {
+//       h3 {
+//         padding: 1rem !important;
+//       }
+//     }
+//   }
+
+//   .selected-plans-container {
+//     padding: 0.5rem 1.2rem !important;
+//     .change-selected-plan {
+//       height: 60px !important;
+
+//       #plan {
+//         font-size: 0.9rem !important;
+//       }
+//       .details {
+//         font-size: 0.8rem !important;
+//       }
+//     }
+//   }
+//   .our-input, .stripe-input {
+//     margin: 3px 0 !important;
+//   }
+//   .our-input, .cvc-input {
+//     margin: 7px 0 !important;
+//   }
+//   .payment-container {
+//     padding: 0 1.2rem !important;
+//   }
+//   .continue-button {
+//     height: 45px !important;
+//   }
+//   .customer_name {
+//     margin: 3px 0 4px !important;
+//   }
+// }
+
+@media (max-width : 1200px) {
+  .subscribe-container {
+    .subscribe {
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+  .selected-plans-container {
+    .change-selected-plan {
+      height: max-content !important;
+      .details {
+        margin: 0 6px 5px;
+        font-size: 0.6rem !important;
+      }
+    }
+  }
+  .our-input, .stripe-input {
+    padding: 5px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .monetisation-flow-wrapper {
+    .wrapper .flow-container .popup-wrapper{
+      .right-section {
+        border-radius: 0;
+        top: 0;
+        margin-top: 3rem;
+      }
+      .left-section-2 {
+      display: none;
+    }}
+  }
+}

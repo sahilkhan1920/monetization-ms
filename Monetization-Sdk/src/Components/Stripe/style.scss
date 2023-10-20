@@ -1,0 +1,157 @@
+.stripe-form {
+    
+    .form-header {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .status {
+        font-size: 1rem;
+
+        span {
+            content: "\A";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #999;
+            display: inline-block;
+        }
+    }
+
+    .form-text {
+        color: #979797;
+        margin-left: auto;
+        font-size: 12px;
+        max-width: 140px;
+        text-align: right;
+    }
+}
+
+
+//input
+
+.our-input,
+.stripe-input {
+    background: rgba(255, 255, 255, 0.15);
+    color: rgb(104, 104, 104);
+    padding: 10px 20px;
+    margin: 7px 0;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    // border: 1px solid #979797;
+    border-radius: 3px;
+
+    .title {
+        position: absolute;
+        top: -14px;
+        font-size: 12px;
+    }
+
+    .title-head {
+        display: inline-block;
+        font-style: italic;
+        position: absolute;
+        top: -6px;
+        font-size: .7em;
+        pointer-events: none;
+        background: #fff;
+        padding: 0 5px;
+        color: #979797;
+        opacity: 1;
+    }
+
+    input {
+        background: transparent;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        width: 100%;
+        max-width: 100%;
+        outline: none;
+        border: none;
+
+        &::placeholder {
+            color: #d1d1d1;
+        }
+    }
+}
+
+.form-2 {
+    display: grid;
+    grid-template-columns: 39% 60%;
+    justify-content: space-between;
+
+    // gap: 14px;
+    .offer-container {
+        // width: 98.5%;
+        margin: 7px 0 7px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 3px;
+    }
+}
+
+.state-country {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.continue-button {
+    margin: 5px 0;
+    padding: 15px 5px;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    // background: #CF0A2C;
+    border: none;
+    // color: #666;
+    cursor: pointer;
+    // color: #fff;
+}
+
+.review-container {
+    border-top: 3px solid rgba(255, 255, 255, 0.46);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.46);
+    margin: 1.2rem 0;
+
+    .review-detail {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.title {
+    color: #fff;
+}
+
+.offer-code-input::placeholder {
+    color: #d1d1d1;
+}
+
+.selected-plans-container {
+    .plan-details {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        padding: 0.3rem 0;
+        margin: auto 0;
+    }
+}
+.disabled {
+    background-color: #757575;
+}
+.error-msg {
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0 10px;
+    color: #cf0a2c;
+}

@@ -1,0 +1,22 @@
+* {
+    font-family: inherit, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.discounted-price {
+    font-size: 14px;
+    opacity: .6;
+    position: relative;
+}
+.discounted-price::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: red;
+    top: 50%;
+    left: 0;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}

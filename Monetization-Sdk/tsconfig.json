@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "sourceMap": true,
+      "strict": true,
+      "jsx": "react",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "allowJs": true
+    },
+    "include": [
+      "src/**/*",
+      "../container/src/typings/header.d.ts"
+    ]
+  }

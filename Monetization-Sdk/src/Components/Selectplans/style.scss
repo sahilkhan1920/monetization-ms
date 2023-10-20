@@ -1,0 +1,59 @@
+.selected-plans-container {
+    padding: 1.2rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    .change-selected-plan {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        // background: rgba(0, 0, 0, 0.1);
+        height: 70px;
+    .payment-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        margin: 4px;
+        img {
+            width: 70%;
+        }
+    }
+    .details {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 6px;
+        .billing-date {
+            color: #fff;
+            opacity: 0.5;
+            font-size: 14px;
+        }
+    }
+    #plan {
+        background: transparent;
+        border: none;
+        width: 100%;
+        max-width: 100%;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0 0.2rem;
+        height: 25px;
+        cursor: pointer;
+    }
+    .selected-plan-pricing {
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        margin: 20px 0;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+    .feature {
+        padding: 5px 0;
+    }
+}
+@media (max-width: 600px) {
+    .billing-price {
+        font-size: 12px;
+    }
+}

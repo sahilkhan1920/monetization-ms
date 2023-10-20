@@ -1,0 +1,53 @@
+.spinner {
+    padding: 0.5rem;
+    width: 1em;
+    height: 1em;
+    margin: 10px auto;
+    // background-color: rgb(178, 178, 64);
+    border: 2px solid #041E41;
+    border-top: 3px solid currentColor;
+    border-radius: 100%;
+    animation: spin 1s infinite linear;
+    color: #fff;
+  }
+
+  #brand-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    // height: 100vh;
+    // width: 100vw;
+
+
+    img{
+      border-radius: 50%;
+      background: transparent;
+      height: 150px;
+    }
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .loading-screen {
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #000000ab;
+    .container {
+      position: relative;
+      // top: 38%;
+    }
+  }
+  // @media (max-width : 768px) {
+  //   .loading-screen {
+  //     width: 100%;
+  //   }
+  // }
